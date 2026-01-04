@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>HASEONG ROULETTE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>HASEONG ROULETTE</h1>
+
+<div class="status">
+  <div>
+    <h2>플레이어</h2>
+    <div id="playerHearts"></div>
+    <img id="playerImg" src="player.png" class="character">
+  </div>
+
+  <div>
+    <h2>???</h2>
+    <div id="aiHearts"></div>
+    <img id="aiImg" src="ai.png" class="character">
+  </div>
+</div>
+
+<div class="info">
+  <p id="roundInfo"></p>
+  <p id="ammoInfo"></p>
+</div>
+
+<div class="buttons">
+  <button id="selfBtn">자신에게 발사</button>
+  <button id="aiBtn">AI에게 발사</button>
+  <div id="itemButtons"></div>
+</div>
+
+<p id="message"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
