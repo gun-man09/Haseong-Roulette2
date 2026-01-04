@@ -1,0 +1,93 @@
+body {
+  background: #111;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.status {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  position: relative;
+}
+
+.character {
+  width: 80px;
+  margin-top: 10px;
+}
+
+.heart {
+  font-size: 28px;
+  margin: 0 2px;
+}
+
+.empty {
+  color: #555;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+.info {
+  margin: 10px 0;
+}
+
+#message {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+#ammoInfo {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.bullet {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  transition: transform 0.5s linear;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.bullet.real {
+  color: red;
+}
+
+.bullet.fake {
+  color: #aaa;
+}
+
+.explosion {
+  position: absolute;
+  font-size: 28px;
+  color: orange;
+  pointer-events: none;
+  animation: explode 0.3s forwards;
+  z-index: 20;
+}
+
+.itemAnim {
+  position: absolute;
+  font-size: 28px;
+  pointer-events: none;
+  z-index: 50;
+  color: yellow;
+}
+
+@keyframes explode {
+  0% { transform: scale(0.5); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 1; }
+  100% { transform: scale(2); opacity: 0; }
+}
+
